@@ -1,0 +1,51 @@
+{{> logOut}}
+
+
+<p>Fill the form to create a new videogame: </p>
+
+{{!-- action --> Enlace con el que el form se va a comunicar --}}
+{{!-- method --> Metodo con el que se va a comunicar (GET, POST, etc) --}}
+<form action="/new-videogame" method="POST">
+
+    <label for="name">Nombre: </label>
+    <input type="text" name="name" id="name">
+
+    <br>
+
+    <label for="platform">Platform: </label>
+    <input type="text" name="platform" id="platform">
+
+    <br>
+
+    <label for="genre">Genre: </label>
+    <input type="text" name="genre" id="genre">
+
+    <br>
+
+    <label for="developer">Developer: </label>
+    <input type="text" name="developer" id="developer">
+
+    <br>
+
+    <label for="releaseDate">Release Date: </label>
+    <input type="text" name="releaseDate" id="releaseDate">
+
+    <br>
+
+    <label for="rating">Rating: </label>
+    <input type="text" name="rating" id="rating">
+
+    <br>
+
+    <label for="pegi">PEGI: </label>
+    <input type="text" name="pegi" id="pegi">
+
+    <br>
+
+    <label for="imageUrl">Image URL: </label>
+    <input type="text" name="imageUrl" id="imageUrl">
+
+    <br>
+
+    <button class="button-is-primary" style="margin: 10px;">Create Videogame</button>
+</form>

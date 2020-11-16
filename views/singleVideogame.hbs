@@ -1,0 +1,18 @@
+
+{{> logOut}}
+
+<p>Name: {{name}}</p>
+<p>Developer: {{developer}}</p>
+<p>Rating: {{rating}}</p>
+
+
+<button class="button is-primary">
+    <a href="/edit-videogame/{{_id}}">Editar</a>
+</button>
+
+
+
+
+<form action="/delete-game/{{_id}}" method="POST">
+    <button class="button is-danger" type="submit">Eliminar</button>
+</form>

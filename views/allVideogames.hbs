@@ -1,0 +1,25 @@
+{{> logOut}}
+
+<p>Lista de todos tus juegos</p>
+
+<div class="columns">
+    {{#each videogames}}
+        <div class="card">
+            <a href="/videogame/{{_id}}">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="{{imageUrl}}" alt="{{name}}">
+                    </figure>
+                </div>
+
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content"></div>
+                        <p class="title is-4">{{name}}</p>
+                    </div>
+                </div>
+            </div>
+        </a>  
+    </div>
+    {{/each}} 
+    </div>
